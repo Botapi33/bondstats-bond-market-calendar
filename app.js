@@ -133,6 +133,16 @@
     $('countdown').textContent = days ? `${days}d ${hrs}h ${mins}m` : `${hrs}h ${mins}m`;
   }
 
+
+  function reportHeight() {
+    if (window.parent === window) return;
+    const height = Math.max(
+      document.documentElement.scrollHeight,
+      document.body ? document.body.scrollHeight : 0
+    );
+    window.parent.postMessage({ type: 'bondstats-bond-market-calendar-height', height }, '*');
+  }
+
   async function load() {
     try {
       const r = await fetch(`${DATA_URL}?v=${Date.now()}`, { cache: 'no-store' });
@@ -146,6 +156,7 @@
       renderHealth();
       render();
       updateNext();
+      requestAnimationFrame(reportHeight);
     } catch (error) {
       $('liveStatus').textContent = 'calendar data temporarily unavailable';
       $('calendarList').innerHTML =
@@ -160,11 +171,17 @@
       btn.classList.add('active');
       active = btn.dataset.filter || 'All';
       render();
+      requestAnimationFrame(reportHeight);
     })
   );
 
-  $('windowSelect').addEventListener('change', render);
+  $('windowSelect').addEventListener('change', () => { render(); requestAnimationFrame(reportHeight); });
   setInterval(updateNext, 30000);
   setInterval(load, 600000);
   load();
+  window.addEventListener('load', reportHeight);
+  window.addEventListener('resize', reportHeight);
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(reportHeight).observe(document.documentElement);
+  }
 })();
