@@ -13,14 +13,14 @@
 
   const localTime = (e) =>
     e.datetimeUtc
-      ? new Intl.DateTimeFormat(undefined, {
+      ? new Intl.DateTimeFormat('en-GB', {
           weekday: 'short', month: 'short', day: 'numeric',
           hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
         }).format(new Date(e.datetimeUtc))
       : 'Date confirmed · release time varies';
 
   const dateLabel = (d) =>
-    new Intl.DateTimeFormat(undefined, {
+    new Intl.DateTimeFormat('en-GB', {
       weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
     }).format(new Date(d + 'T12:00:00Z'));
 
@@ -150,7 +150,7 @@
       data = await r.json();
 
       $('liveStatus').textContent =
-        `${data.status || 'live'} · refreshed ${new Date(data.generatedAt).toLocaleString()}`;
+        `${data.status || 'live'} · refreshed ${new Date(data.generatedAt).toLocaleString('en-GB')}`;
 
       counts();
       renderHealth();

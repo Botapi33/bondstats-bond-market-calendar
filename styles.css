@@ -376,3 +376,241 @@ a{color:inherit}
   .bmc-side{grid-template-columns:1fr}
   .bmc-explain{grid-template-columns:1fr;gap:32px}
 }
+
+
+/* =========================================================
+   V2 — RATES DIARY identity
+   More editorial / timetable-like, less generic dashboard.
+   ========================================================= */
+
+.bmc-market-rail{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-bottom:1px solid var(--line);
+  border-top:1px solid var(--line);
+  margin-top:-1px;
+}
+.bmc-market-rail span{
+  position:relative;
+  padding:15px 18px 14px 0;
+  color:#9ba29c;
+  font:700 9px ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.bmc-market-rail span:not(:last-child){
+  border-right:1px solid var(--line);
+  margin-right:18px;
+}
+.bmc-market-rail b{
+  display:inline-block;
+  margin-right:9px;
+  color:var(--green);
+  font-weight:800;
+  letter-spacing:.05em;
+}
+
+/* Hero gains a "printed market note" feeling */
+.bmc-hero{
+  position:relative;
+}
+.bmc-hero:after{
+  content:"RATES / MACRO / FUNDING";
+  position:absolute;
+  right:0;
+  top:22px;
+  color:#333a35;
+  font:800 9px ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.25em;
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+}
+.bmc-hero h1{
+  max-width:760px;
+}
+.bmc-next{
+  position:relative;
+}
+.bmc-next:before{
+  content:"";
+  position:absolute;
+  left:-7px;
+  top:0;
+  width:12px;
+  height:12px;
+  border:1px solid var(--green);
+  border-radius:50%;
+  background:var(--bg);
+}
+
+/* Stats now read as a restrained market strip */
+.bmc-stats{
+  background:
+    linear-gradient(90deg,rgba(103,217,154,.025),transparent 28%),
+    transparent;
+}
+.bmc-stat strong{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:22px;
+  font-weight:500;
+}
+
+/* Distinctive agenda: left timeline + event "index number" */
+.bmc-list{
+  counter-reset:eventrow;
+  border-top:0;
+  position:relative;
+}
+.bmc-list:before{
+  content:"";
+  position:absolute;
+  left:96px;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:#202823;
+}
+.bmc-date{
+  margin-top:10px;
+  padding:24px 0 12px 116px;
+  background:var(--bg);
+  color:#d8d4c8;
+  font:500 19px Georgia,"Times New Roman",serif;
+}
+.bmc-date:before{
+  content:"";
+  position:absolute;
+  left:91px;
+  top:31px;
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  border:1px solid #59625b;
+  background:var(--bg);
+}
+.bmc-event{
+  counter-increment:eventrow;
+  grid-template-columns:78px 112px minmax(0,1fr) 82px;
+  padding-left:116px;
+  min-height:104px;
+}
+.bmc-event:before{
+  content:counter(eventrow, decimal-leading-zero);
+  left:0;
+  top:23px;
+  width:auto;
+  height:auto;
+  border-radius:0;
+  background:transparent;
+  color:#4d5650;
+  font:800 9px ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.08em;
+}
+.bmc-event:after{
+  content:"";
+  position:absolute;
+  left:92px;
+  top:28px;
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:#2f3832;
+  border:2px solid var(--bg);
+  box-shadow:0 0 0 1px #59625b;
+}
+.bmc-event:hover:after{
+  background:var(--green);
+  box-shadow:0 0 0 1px var(--green);
+}
+.bmc-event:hover{
+  background:linear-gradient(90deg,transparent 0,rgba(103,217,154,.025) 20%,transparent 72%);
+}
+.bmc-event h3{
+  font-size:19px;
+}
+.bmc-impact{
+  min-width:58px;
+  text-align:right;
+}
+
+/* Category labels become narrow editorial marks, not dashboard chips */
+.bmc-cat{
+  line-height:1.6;
+}
+.bmc-cat i{
+  border-radius:0;
+  width:8px;
+  height:2px;
+  vertical-align:middle;
+}
+
+/* Sidebar gets a research-note margin treatment */
+.bmc-side{
+  position:relative;
+}
+.bmc-side:before{
+  content:"RESEARCH MARGIN";
+  display:block;
+  margin:0 0 16px;
+  color:#525b55;
+  font:800 8px ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.18em;
+}
+.bmc-side h2{
+  font-size:17px;
+}
+.bmc-health-row{
+  grid-template-columns:7px 1fr auto;
+}
+.bmc-health-dot{
+  width:4px;
+  height:12px;
+  border-radius:0;
+}
+
+/* Footer explanation is deliberately typographic rather than card-like */
+.bmc-explain{
+  position:relative;
+}
+.bmc-explain:before{
+  content:"METHOD";
+  position:absolute;
+  top:18px;
+  left:0;
+  color:#4e5751;
+  font:800 8px ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.18em;
+}
+.bmc-explain>div{
+  padding-top:14px;
+}
+
+@media(max-width:900px){
+  .bmc-market-rail{grid-template-columns:1fr 1fr}
+  .bmc-market-rail span:nth-child(2){border-right:0}
+  .bmc-list:before{left:70px}
+  .bmc-date{padding-left:88px}
+  .bmc-date:before{left:65px}
+  .bmc-event{
+    padding-left:88px;
+    grid-template-columns:72px 100px minmax(0,1fr) 72px;
+  }
+  .bmc-event:after{left:66px}
+}
+@media(max-width:720px){
+  .bmc-market-rail{grid-template-columns:1fr 1fr}
+  .bmc-market-rail span{padding:12px 8px 12px 0}
+  .bmc-list:before{display:none}
+  .bmc-date{
+    padding-left:0;
+    position:relative;
+  }
+  .bmc-date:before{display:none}
+  .bmc-event{
+    padding-left:0;
+    grid-template-columns:1fr 70px;
+  }
+  .bmc-event:before,
+  .bmc-event:after{display:none}
+  .bmc-hero:after{display:none}
+}
