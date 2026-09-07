@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bond Market Calendar | BondStats</title>
+  <meta name="description" content="Live fixed-income calendar for FOMC, ECB, BoE, BoJ, U.S. CPI, Nonfarm Payrolls, Treasury auctions and quarterly refunding dates.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="bmc-page">
+    <div class="bmc-shell">
+      <header class="bmc-top">
+        <div class="bmc-brand">BONDSTATS <b>MARKET CALENDAR</b></div>
+        <div class="bmc-status"><span class="bmc-dot"></span><span id="liveStatus">official-source schedule</span></div>
+      </header>
+
+      <section class="bmc-hero">
+        <div>
+          <div class="bmc-kicker">CENTRAL BANKS · MACRO · TREASURY SUPPLY</div>
+          <h1>Bond Market Calendar</h1>
+          <p>A fixed-income calendar built around the dates that actually reprice rates: central-bank decisions, inflation and labour releases, Treasury refunding and coupon auctions. The data layer refreshes automatically from official sources through GitHub Actions.</p>
+        </div>
+        <aside class="bmc-next">
+          <div class="bmc-next-label">NEXT MARKET-MOVING EVENT</div>
+          <h2 id="nextTitle">Loading calendar…</h2>
+          <div class="bmc-countdown" id="countdown">—</div>
+          <div class="bmc-next-meta" id="nextMeta">Awaiting official-source data.</div>
+        </aside>
+      </section>
+
+      <section class="bmc-stats">
+        <div class="bmc-stat"><span>Next 7 days</span><strong id="stat7">—</strong></div>
+        <div class="bmc-stat"><span>Central-bank decisions / 30d</span><strong id="statCB">—</strong></div>
+        <div class="bmc-stat"><span>Macro releases / 30d</span><strong id="statMacro">—</strong></div>
+        <div class="bmc-stat"><span>Treasury events / 30d</span><strong id="statTreasury">—</strong></div>
+        <div class="bmc-stat"><span>Official sources healthy</span><strong id="statHealth">—</strong></div>
+      </section>
+
+      <div class="bmc-controls" id="filters">
+        <button class="bmc-filter active" data-filter="All">All</button>
+        <button class="bmc-filter" data-filter="Central Banks">Central Banks</button>
+        <button class="bmc-filter" data-filter="Inflation">Inflation</button>
+        <button class="bmc-filter" data-filter="Labour">Labour</button>
+        <button class="bmc-filter" data-filter="Treasury">Treasury</button>
+        <select class="bmc-window" id="windowSelect" aria-label="Calendar horizon">
+          <option value="30">Next 30 days</option>
+          <option value="90" selected>Next 90 days</option>
+          <option value="400">All scheduled</option>
+        </select>
+      </div>
+
+      <div class="bmc-main">
+        <main>
+          <div class="bmc-list" id="calendarList"><div class="bmc-empty">Loading live calendar…</div></div>
+        </main>
+
+        <aside class="bmc-side">
+          <section>
+            <h2>Source integrity</h2>
+            <div id="sourceHealth"></div>
+          </section>
+          <section>
+            <h2>Why these dates matter</h2>
+            <p>Bond markets react most sharply when the expected path of inflation, policy rates or sovereign supply changes. This calendar prioritizes events with a direct transmission channel into yields, curves, breakevens and term premium.</p>
+          </section>
+          <section>
+            <div class="bmc-note"><strong>Data policy.</strong> Dates are sourced from official institutions. “Impact” and “Why it matters” are BondStats analytical labels. If a source is temporarily unavailable, the collector preserves the latest valid data for that source.</div>
+          </section>
+        </aside>
+      </div>
+
+      <section class="bmc-explain">
+        <div>
+          <h2>A calendar built for fixed income</h2>
+          <p>FOMC, ECB, Bank of England and Bank of Japan decisions sit beside U.S. CPI, Nonfarm Payrolls and Treasury funding events because they influence different parts of the same pricing chain.</p>
+        </div>
+        <div>
+          <h2>Live schedule, persistent context</h2>
+          <p>The calendar is refreshed automatically rather than maintained as a static article. Future versions can add consensus, actual releases, auction tails, bid-to-cover ratios and post-event yield reactions.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

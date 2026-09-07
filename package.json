@@ -1,0 +1,13 @@
+{
+  "name": "bondstats-bond-market-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update-bond-market-calendar.mjs",
+    "check": "node --check scripts/update-bond-market-calendar.mjs && node --check app.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
