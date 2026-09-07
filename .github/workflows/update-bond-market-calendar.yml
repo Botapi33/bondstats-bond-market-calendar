@@ -1,0 +1,48 @@
+name: Update Bond Market Calendar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */4 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bond-market-calendar-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Refresh official-source calendar
+        run: node scripts/update-bond-market-calendar.mjs
+
+      - name: Validate generated JSON
+        run: |
+          node -e "const fs=require('fs'); const d=JSON.parse(fs.readFileSync('data/bond-market-calendar.json','utf8')); if(!Array.isArray(d.events)||!Array.isArray(d.sources)) process.exit(1); console.log('events='+d.events.length+', status='+d.status);"
+
+      - name: Commit updated data
+        shell: bash
+        run: |
+          if git diff --quiet -- data/bond-market-calendar.json; then
+            echo "No calendar changes."
+            exit 0
+          fi
+
+          git config user.name "bondstats-calendar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/bond-market-calendar.json
+          git commit -m "chore: refresh bond market calendar"
+          git push
