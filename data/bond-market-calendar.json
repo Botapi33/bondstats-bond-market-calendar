@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T12:56:32.584Z",
+  "generatedAt": "2026-09-10T19:08:13.536Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 3,
-      "checkedAt": "2026-09-10T12:56:23.264Z",
+      "checkedAt": "2026-09-10T19:08:05.071Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 9,
-      "checkedAt": "2026-09-10T12:56:24.023Z"
+      "checkedAt": "2026-09-10T19:08:05.839Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-09-10T12:56:23.677Z"
+      "checkedAt": "2026-09-10T19:08:05.415Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-09-10T12:56:23.560Z"
+      "checkedAt": "2026-09-10T19:08:05.712Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 7,
-      "checkedAt": "2026-09-10T12:56:23.519Z",
+      "checkedAt": "2026-09-10T19:08:05.401Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -51,8 +51,8 @@
       "name": "U.S. Treasury Auctions",
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
-      "eventCount": 3,
-      "checkedAt": "2026-09-10T12:56:23.972Z"
+      "eventCount": 5,
+      "checkedAt": "2026-09-10T19:08:05.616Z"
     },
     {
       "id": "treasury-refunding",
@@ -60,7 +60,7 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-09-10T12:56:32.584Z"
+      "checkedAt": "2026-09-10T19:08:13.536Z"
     }
   ],
   "events": [
@@ -161,6 +161,27 @@
       "whyItMatters": "Inflation surprises can change the expected Fed path, real yields, breakevens and the front end of the Treasury curve within seconds."
     },
     {
+      "id": "treasury-auctions-u-s-treasury-19-year-11-month-auction-2026-09-15",
+      "sourceId": "treasury-auctions",
+      "date": "2026-09-15",
+      "time": "13:00",
+      "timeZone": "America/New_York",
+      "timeLabel": "13:00 ET",
+      "datetimeUtc": "2026-09-15T17:00:00.000Z",
+      "title": "U.S. Treasury 19-Year 11-Month Auction",
+      "category": "Treasury",
+      "region": "United States",
+      "impact": "medium",
+      "sourceName": "U.S. Treasury Auctions",
+      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
+      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
+      "meta": {
+        "cusip": "912810UX4",
+        "offeringAmount": "13000000000",
+        "reopening": "Yes"
+      }
+    },
+    {
       "id": "fed-2026-09-16",
       "sourceId": "fed",
       "date": "2026-09-16",
@@ -192,6 +213,27 @@
       "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "whyItMatters": "Bank Rate decisions move gilt yields, sterling rates and expectations for the UK inflation-policy trade-off.",
       "meta": {}
+    },
+    {
+      "id": "treasury-auctions-u-s-treasury-9-year-10-month-auction-2026-09-17",
+      "sourceId": "treasury-auctions",
+      "date": "2026-09-17",
+      "time": "13:00",
+      "timeZone": "America/New_York",
+      "timeLabel": "13:00 ET",
+      "datetimeUtc": "2026-09-17T17:00:00.000Z",
+      "title": "U.S. Treasury 9-Year 10-Month Auction",
+      "category": "Treasury",
+      "region": "United States",
+      "impact": "medium",
+      "sourceName": "U.S. Treasury Auctions",
+      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
+      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
+      "meta": {
+        "cusip": "91282CRE3",
+        "offeringAmount": "19000000000",
+        "reopening": "Yes"
+      }
     },
     {
       "id": "boj-bank-of-japan-monetary-policy-decision-2026-09-18",
