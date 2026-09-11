@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T22:37:14.529Z",
+  "generatedAt": "2026-09-11T04:45:13.251Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 3,
-      "checkedAt": "2026-09-10T22:36:55.095Z",
+      "checkedAt": "2026-09-11T04:44:52.026Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -18,8 +18,8 @@
       "name": "European Central Bank",
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-      "eventCount": 9,
-      "checkedAt": "2026-09-10T22:36:55.695Z"
+      "eventCount": 8,
+      "checkedAt": "2026-09-11T04:44:52.899Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-09-10T22:36:55.228Z"
+      "checkedAt": "2026-09-11T04:44:52.519Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-09-10T22:36:55.496Z"
+      "checkedAt": "2026-09-11T04:44:52.515Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 7,
-      "checkedAt": "2026-09-10T22:36:55.319Z",
+      "checkedAt": "2026-09-11T04:44:52.510Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -51,40 +51,20 @@
       "name": "U.S. Treasury Auctions",
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
-      "eventCount": 5,
-      "checkedAt": "2026-09-10T22:36:55.398Z"
+      "eventCount": 4,
+      "checkedAt": "2026-09-11T04:44:52.807Z"
     },
     {
       "id": "treasury-refunding",
       "name": "U.S. Treasury Quarterly Refunding",
-      "status": "ok",
+      "status": "fallback",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-09-10T22:37:14.528Z"
+      "checkedAt": "2026-09-11T04:45:13.251Z",
+      "message": "The operation was aborted due to timeout"
     }
   ],
   "events": [
-    {
-      "id": "treasury-auctions-u-s-treasury-3-year-auction-2026-09-08",
-      "sourceId": "treasury-auctions",
-      "date": "2026-09-08",
-      "time": "13:00",
-      "timeZone": "America/New_York",
-      "timeLabel": "13:00 ET",
-      "datetimeUtc": "2026-09-08T17:00:00.000Z",
-      "title": "U.S. Treasury 3-Year Auction",
-      "category": "Treasury",
-      "region": "United States",
-      "impact": "medium",
-      "sourceName": "U.S. Treasury Auctions",
-      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
-      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
-      "meta": {
-        "cusip": "91282CRL7",
-        "offeringAmount": "58000000000",
-        "reopening": "No"
-      }
-    },
     {
       "id": "treasury-auctions-u-s-treasury-9-year-11-month-auction-2026-09-09",
       "sourceId": "treasury-auctions",
@@ -126,23 +106,6 @@
         "offeringAmount": "22000000000",
         "reopening": "Yes"
       }
-    },
-    {
-      "id": "ecb-ecb-monetary-policy-decision-2026-09-10",
-      "sourceId": "ecb",
-      "date": "2026-09-10",
-      "time": "14:15",
-      "timeZone": "Europe/Brussels",
-      "timeLabel": "14:15 CET/CEST",
-      "datetimeUtc": "2026-09-10T12:15:00.000Z",
-      "title": "ECB Monetary Policy Decision",
-      "category": "Central Banks",
-      "region": "Euro Area",
-      "impact": "critical",
-      "sourceName": "European Central Bank",
-      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-      "whyItMatters": "Changes in the ECB policy path can reprice Bund yields, euro-area curves, sovereign spreads and global duration.",
-      "meta": {}
     },
     {
       "id": "bls-cpi-2026-09-11",
