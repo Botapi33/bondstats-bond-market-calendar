@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-12T22:20:29.398Z",
+  "generatedAt": "2026-09-13T04:52:29.469Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 3,
-      "checkedAt": "2026-09-12T22:20:10.926Z",
+      "checkedAt": "2026-09-13T04:52:08.140Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 8,
-      "checkedAt": "2026-09-12T22:20:11.494Z"
+      "checkedAt": "2026-09-13T04:52:08.915Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-09-12T22:20:11.268Z"
+      "checkedAt": "2026-09-13T04:52:08.392Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-09-12T22:20:11.441Z"
+      "checkedAt": "2026-09-13T04:52:08.447Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 7,
-      "checkedAt": "2026-09-12T22:20:11.213Z",
+      "checkedAt": "2026-09-13T04:52:08.420Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -51,40 +51,20 @@
       "name": "U.S. Treasury Auctions",
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
-      "eventCount": 3,
-      "checkedAt": "2026-09-12T22:20:11.263Z"
+      "eventCount": 2,
+      "checkedAt": "2026-09-13T04:52:08.562Z"
     },
     {
       "id": "treasury-refunding",
       "name": "U.S. Treasury Quarterly Refunding",
-      "status": "ok",
+      "status": "fallback",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-09-12T22:20:29.397Z"
+      "checkedAt": "2026-09-13T04:52:29.469Z",
+      "message": "The operation was aborted due to timeout"
     }
   ],
   "events": [
-    {
-      "id": "treasury-auctions-u-s-treasury-29-year-11-month-auction-2026-09-10",
-      "sourceId": "treasury-auctions",
-      "date": "2026-09-10",
-      "time": "13:00",
-      "timeZone": "America/New_York",
-      "timeLabel": "13:00 ET",
-      "datetimeUtc": "2026-09-10T17:00:00.000Z",
-      "title": "U.S. Treasury 29-Year 11-Month Auction",
-      "category": "Treasury",
-      "region": "United States",
-      "impact": "medium",
-      "sourceName": "U.S. Treasury Auctions",
-      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
-      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
-      "meta": {
-        "cusip": "912810UW6",
-        "offeringAmount": "22000000000",
-        "reopening": "Yes"
-      }
-    },
     {
       "id": "bls-cpi-2026-09-11",
       "sourceId": "bls",
