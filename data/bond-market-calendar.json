@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-13T22:26:29.873Z",
+  "generatedAt": "2026-09-14T05:00:33.991Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 3,
-      "checkedAt": "2026-09-13T22:26:20.498Z",
+      "checkedAt": "2026-09-14T05:00:25.408Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 8,
-      "checkedAt": "2026-09-13T22:26:21.281Z"
+      "checkedAt": "2026-09-14T05:00:26.400Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-09-13T22:26:21.235Z"
+      "checkedAt": "2026-09-14T05:00:25.802Z"
     },
     {
       "id": "boj",
@@ -35,15 +35,15 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-09-13T22:26:20.953Z"
+      "checkedAt": "2026-09-14T05:00:25.976Z"
     },
     {
       "id": "bls",
       "name": "U.S. Bureau of Labor Statistics",
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
-      "eventCount": 7,
-      "checkedAt": "2026-09-13T22:26:20.924Z",
+      "eventCount": 6,
+      "checkedAt": "2026-09-14T05:00:25.858Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 2,
-      "checkedAt": "2026-09-13T22:26:21.159Z"
+      "checkedAt": "2026-09-14T05:00:26.057Z"
     },
     {
       "id": "treasury-refunding",
@@ -60,26 +60,10 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-09-13T22:26:29.873Z"
+      "checkedAt": "2026-09-14T05:00:33.991Z"
     }
   ],
   "events": [
-    {
-      "id": "bls-cpi-2026-09-11",
-      "sourceId": "bls",
-      "date": "2026-09-11",
-      "time": "08:30",
-      "timeZone": "America/New_York",
-      "timeLabel": "08:30 ET",
-      "datetimeUtc": "2026-09-11T12:30:00Z",
-      "title": "U.S. Consumer Price Index",
-      "category": "Inflation",
-      "region": "United States",
-      "impact": "critical",
-      "sourceName": "U.S. Bureau of Labor Statistics",
-      "sourceUrl": "https://www.bls.gov/schedule/news_release/cpi.htm",
-      "whyItMatters": "Inflation surprises can change the expected Fed path, real yields, breakevens and the front end of the Treasury curve within seconds."
-    },
     {
       "id": "treasury-auctions-u-s-treasury-19-year-11-month-auction-2026-09-15",
       "sourceId": "treasury-auctions",
