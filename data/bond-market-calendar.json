@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-18T22:36:25.728Z",
+  "generatedAt": "2026-09-19T04:41:00.935Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -9,8 +9,8 @@
       "name": "Federal Reserve",
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "eventCount": 3,
-      "checkedAt": "2026-09-18T22:36:15.955Z",
+      "eventCount": 2,
+      "checkedAt": "2026-09-19T04:40:51.466Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 8,
-      "checkedAt": "2026-09-18T22:36:17.113Z"
+      "checkedAt": "2026-09-19T04:40:52.291Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 2,
-      "checkedAt": "2026-09-18T22:36:16.533Z"
+      "checkedAt": "2026-09-19T04:40:51.888Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-09-18T22:36:16.476Z"
+      "checkedAt": "2026-09-19T04:40:51.980Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 6,
-      "checkedAt": "2026-09-18T22:36:16.364Z",
+      "checkedAt": "2026-09-19T04:40:51.897Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 5,
-      "checkedAt": "2026-09-18T22:36:16.737Z"
+      "checkedAt": "2026-09-19T04:40:52.071Z"
     },
     {
       "id": "treasury-refunding",
@@ -60,26 +60,10 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-09-18T22:36:25.728Z"
+      "checkedAt": "2026-09-19T04:41:00.935Z"
     }
   ],
   "events": [
-    {
-      "id": "fed-2026-09-16",
-      "sourceId": "fed",
-      "date": "2026-09-16",
-      "time": "14:00",
-      "timeZone": "America/New_York",
-      "timeLabel": "14:00 ET",
-      "datetimeUtc": "2026-09-16T18:00:00Z",
-      "title": "FOMC Rate Decision",
-      "category": "Central Banks",
-      "region": "United States",
-      "impact": "critical",
-      "sourceName": "Federal Reserve",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "whyItMatters": "The FOMC decision directly reprices the expected policy path, front-end Treasury yields and the shape of the global yield curve."
-    },
     {
       "id": "boe-bank-of-england-rate-decision-2026-09-17",
       "sourceId": "boe",
