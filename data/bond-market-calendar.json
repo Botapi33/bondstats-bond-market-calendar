@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-20T22:28:42.346Z",
+  "generatedAt": "2026-09-21T04:59:58.678Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-09-20T22:28:33.954Z",
+      "checkedAt": "2026-09-21T04:59:37.294Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 8,
-      "checkedAt": "2026-09-20T22:28:34.833Z"
+      "checkedAt": "2026-09-21T04:59:37.884Z"
     },
     {
       "id": "boe",
@@ -27,15 +27,15 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-09-20T22:28:34.517Z"
+      "checkedAt": "2026-09-21T04:59:37.572Z"
     },
     {
       "id": "boj",
       "name": "Bank of Japan",
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
-      "eventCount": 9,
-      "checkedAt": "2026-09-20T22:28:34.364Z"
+      "eventCount": 8,
+      "checkedAt": "2026-09-21T04:59:37.699Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 6,
-      "checkedAt": "2026-09-20T22:28:34.376Z",
+      "checkedAt": "2026-09-21T04:59:37.518Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,35 +52,19 @@
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 4,
-      "checkedAt": "2026-09-20T22:28:34.696Z"
+      "checkedAt": "2026-09-21T04:59:37.663Z"
     },
     {
       "id": "treasury-refunding",
       "name": "U.S. Treasury Quarterly Refunding",
-      "status": "ok",
+      "status": "fallback",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-09-20T22:28:42.346Z"
+      "checkedAt": "2026-09-21T04:59:58.678Z",
+      "message": "The operation was aborted due to timeout"
     }
   ],
   "events": [
-    {
-      "id": "boj-bank-of-japan-monetary-policy-decision-2026-09-18",
-      "sourceId": "boj",
-      "date": "2026-09-18",
-      "time": null,
-      "timeZone": "Asia/Tokyo",
-      "timeLabel": "Time varies",
-      "datetimeUtc": null,
-      "title": "Bank of Japan Monetary Policy Decision",
-      "category": "Central Banks",
-      "region": "Japan",
-      "impact": "critical",
-      "sourceName": "Bank of Japan",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
-      "whyItMatters": "BoJ decisions can trigger sharp moves in JGB yields, the yen and global term premia because Japan is a major source of cross-border capital.",
-      "meta": {}
-    },
     {
       "id": "treasury-auctions-u-s-treasury-2-year-auction-2026-09-22",
       "sourceId": "treasury-auctions",
