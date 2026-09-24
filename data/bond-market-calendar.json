@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T22:58:19.297Z",
+  "generatedAt": "2026-09-24T04:56:01.419Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-09-23T22:57:59.907Z",
+      "checkedAt": "2026-09-24T04:55:52.034Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -18,16 +18,16 @@
       "name": "European Central Bank",
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-      "eventCount": 8,
-      "checkedAt": "2026-09-23T22:58:00.557Z"
+      "eventCount": 9,
+      "checkedAt": "2026-09-24T04:55:52.718Z"
     },
     {
       "id": "boe",
       "name": "Bank of England",
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-      "eventCount": 2,
-      "checkedAt": "2026-09-23T22:58:00.306Z"
+      "eventCount": 1,
+      "checkedAt": "2026-09-24T04:55:52.508Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 8,
-      "checkedAt": "2026-09-23T22:58:00.417Z"
+      "checkedAt": "2026-09-24T04:55:52.408Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 6,
-      "checkedAt": "2026-09-23T22:58:00.287Z",
+      "checkedAt": "2026-09-24T04:55:52.262Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 4,
-      "checkedAt": "2026-09-23T22:58:00.463Z"
+      "checkedAt": "2026-09-24T04:55:52.360Z"
     },
     {
       "id": "treasury-refunding",
@@ -60,27 +60,10 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-09-23T22:58:19.297Z"
+      "checkedAt": "2026-09-24T04:56:01.418Z"
     }
   ],
   "events": [
-    {
-      "id": "boe-bank-of-england-rate-decision-2026-09-21",
-      "sourceId": "boe",
-      "date": "2026-09-21",
-      "time": "12:00",
-      "timeZone": "Europe/London",
-      "timeLabel": "12:00 London",
-      "datetimeUtc": "2026-09-21T11:00:00.000Z",
-      "title": "Bank of England Rate Decision",
-      "category": "Central Banks",
-      "region": "United Kingdom",
-      "impact": "critical",
-      "sourceName": "Bank of England",
-      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-      "whyItMatters": "Bank Rate decisions move gilt yields, sterling rates and expectations for the UK inflation-policy trade-off.",
-      "meta": {}
-    },
     {
       "id": "treasury-auctions-u-s-treasury-2-year-auction-2026-09-22",
       "sourceId": "treasury-auctions",
@@ -614,6 +597,23 @@
       "sourceName": "Bank of Japan",
       "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "whyItMatters": "BoJ decisions can trigger sharp moves in JGB yields, the yen and global term premia because Japan is a major source of cross-border capital.",
+      "meta": {}
+    },
+    {
+      "id": "ecb-ecb-monetary-policy-decision-2027-10-28",
+      "sourceId": "ecb",
+      "date": "2027-10-28",
+      "time": "14:15",
+      "timeZone": "Europe/Brussels",
+      "timeLabel": "14:15 CET/CEST",
+      "datetimeUtc": "2027-10-28T12:15:00.000Z",
+      "title": "ECB Monetary Policy Decision",
+      "category": "Central Banks",
+      "region": "Euro Area",
+      "impact": "critical",
+      "sourceName": "European Central Bank",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "whyItMatters": "Changes in the ECB policy path can reprice Bund yields, euro-area curves, sovereign spreads and global duration.",
       "meta": {}
     }
   ]
