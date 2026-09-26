@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-25T23:19:24.373Z",
+  "generatedAt": "2026-09-26T05:02:50.323Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-09-25T23:19:15.096Z",
+      "checkedAt": "2026-09-26T05:02:41.903Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 9,
-      "checkedAt": "2026-09-25T23:19:15.668Z"
+      "checkedAt": "2026-09-26T05:02:42.533Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-09-25T23:19:15.485Z"
+      "checkedAt": "2026-09-26T05:02:42.260Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-09-25T23:19:15.535Z"
+      "checkedAt": "2026-09-26T05:02:42.296Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 6,
-      "checkedAt": "2026-09-25T23:19:15.277Z",
+      "checkedAt": "2026-09-26T05:02:42.239Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -51,8 +51,8 @@
       "name": "U.S. Treasury Auctions",
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
-      "eventCount": 3,
-      "checkedAt": "2026-09-25T23:19:15.376Z"
+      "eventCount": 1,
+      "checkedAt": "2026-09-26T05:02:42.393Z"
     },
     {
       "id": "treasury-refunding",
@@ -60,52 +60,10 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-09-25T23:19:24.373Z"
+      "checkedAt": "2026-09-26T05:02:50.323Z"
     }
   ],
   "events": [
-    {
-      "id": "treasury-auctions-u-s-treasury-5-year-auction-2026-09-23",
-      "sourceId": "treasury-auctions",
-      "date": "2026-09-23",
-      "time": "13:00",
-      "timeZone": "America/New_York",
-      "timeLabel": "13:00 ET",
-      "datetimeUtc": "2026-09-23T17:00:00.000Z",
-      "title": "U.S. Treasury 5-Year Auction",
-      "category": "Treasury",
-      "region": "United States",
-      "impact": "medium",
-      "sourceName": "U.S. Treasury Auctions",
-      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
-      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
-      "meta": {
-        "cusip": "91282CRN3",
-        "offeringAmount": "70000000000",
-        "reopening": "No"
-      }
-    },
-    {
-      "id": "treasury-auctions-u-s-treasury-1-year-10-month-auction-2026-09-23",
-      "sourceId": "treasury-auctions",
-      "date": "2026-09-23",
-      "time": "13:00",
-      "timeZone": "America/New_York",
-      "timeLabel": "13:00 ET",
-      "datetimeUtc": "2026-09-23T17:00:00.000Z",
-      "title": "U.S. Treasury 1-Year 10-Month Auction",
-      "category": "Treasury",
-      "region": "United States",
-      "impact": "medium",
-      "sourceName": "U.S. Treasury Auctions",
-      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
-      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
-      "meta": {
-        "cusip": "91282CRD5",
-        "offeringAmount": "28000000000",
-        "reopening": "Yes"
-      }
-    },
     {
       "id": "treasury-auctions-u-s-treasury-7-year-auction-2026-09-24",
       "sourceId": "treasury-auctions",
