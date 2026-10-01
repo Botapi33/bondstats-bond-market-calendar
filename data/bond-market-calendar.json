@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T06:00:24.098Z",
+  "generatedAt": "2026-10-01T15:28:51.224Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-10-01T06:00:04.686Z",
+      "checkedAt": "2026-10-01T15:28:42.895Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 9,
-      "checkedAt": "2026-10-01T06:00:05.406Z"
+      "checkedAt": "2026-10-01T15:28:43.318Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-10-01T06:00:05.444Z"
+      "checkedAt": "2026-10-01T15:28:43.115Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-10-01T06:00:05.181Z"
+      "checkedAt": "2026-10-01T15:28:43.218Z"
     },
     {
       "id": "bls",
@@ -43,17 +43,16 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 6,
-      "checkedAt": "2026-10-01T06:00:04.856Z",
+      "checkedAt": "2026-10-01T15:28:43.003Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
       "id": "treasury-auctions",
       "name": "U.S. Treasury Auctions",
-      "status": "error",
+      "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
-      "eventCount": 0,
-      "checkedAt": "2026-10-01T06:00:05.293Z",
-      "message": "Parsed zero events in active window"
+      "eventCount": 3,
+      "checkedAt": "2026-10-01T15:28:43.212Z"
     },
     {
       "id": "treasury-refunding",
@@ -61,7 +60,7 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-10-01T06:00:24.097Z"
+      "checkedAt": "2026-10-01T15:28:51.224Z"
     }
   ],
   "events": [
@@ -80,6 +79,69 @@
       "sourceName": "U.S. Bureau of Labor Statistics",
       "sourceUrl": "https://www.bls.gov/schedule/news_release/empsit.htm",
       "whyItMatters": "Payrolls, unemployment and wage growth can rapidly alter expectations for Fed policy and front-end Treasury yields."
+    },
+    {
+      "id": "treasury-auctions-u-s-treasury-3-year-auction-2026-10-06",
+      "sourceId": "treasury-auctions",
+      "date": "2026-10-06",
+      "time": "13:00",
+      "timeZone": "America/New_York",
+      "timeLabel": "13:00 ET",
+      "datetimeUtc": "2026-10-06T17:00:00.000Z",
+      "title": "U.S. Treasury 3-Year Auction",
+      "category": "Treasury",
+      "region": "United States",
+      "impact": "medium",
+      "sourceName": "U.S. Treasury Auctions",
+      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
+      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
+      "meta": {
+        "cusip": "91282CRQ6",
+        "offeringAmount": "58000000000",
+        "reopening": "No"
+      }
+    },
+    {
+      "id": "treasury-auctions-u-s-treasury-9-year-10-month-auction-2026-10-07",
+      "sourceId": "treasury-auctions",
+      "date": "2026-10-07",
+      "time": "13:00",
+      "timeZone": "America/New_York",
+      "timeLabel": "13:00 ET",
+      "datetimeUtc": "2026-10-07T17:00:00.000Z",
+      "title": "U.S. Treasury 9-Year 10-Month Auction",
+      "category": "Treasury",
+      "region": "United States",
+      "impact": "medium",
+      "sourceName": "U.S. Treasury Auctions",
+      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
+      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
+      "meta": {
+        "cusip": "91282CRF0",
+        "offeringAmount": "39000000000",
+        "reopening": "Yes"
+      }
+    },
+    {
+      "id": "treasury-auctions-u-s-treasury-29-year-10-month-auction-2026-10-08",
+      "sourceId": "treasury-auctions",
+      "date": "2026-10-08",
+      "time": "13:00",
+      "timeZone": "America/New_York",
+      "timeLabel": "13:00 ET",
+      "datetimeUtc": "2026-10-08T17:00:00.000Z",
+      "title": "U.S. Treasury 29-Year 10-Month Auction",
+      "category": "Treasury",
+      "region": "United States",
+      "impact": "medium",
+      "sourceName": "U.S. Treasury Auctions",
+      "sourceUrl": "https://www.treasurydirect.gov/auctions/upcoming/",
+      "whyItMatters": "Coupon auctions reveal real-time demand for Treasury supply and can affect yields around the auction close.",
+      "meta": {
+        "cusip": "912810UW6",
+        "offeringAmount": "22000000000",
+        "reopening": "Yes"
+      }
     },
     {
       "id": "bls-cpi-2026-10-14",
