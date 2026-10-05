@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T23:13:13.845Z",
+  "generatedAt": "2026-10-05T05:45:52.332Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-10-04T23:12:55.402Z",
+      "checkedAt": "2026-10-05T05:45:43.143Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 9,
-      "checkedAt": "2026-10-04T23:12:56.113Z"
+      "checkedAt": "2026-10-05T05:45:43.408Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-10-04T23:12:55.578Z"
+      "checkedAt": "2026-10-05T05:45:43.310Z"
     },
     {
       "id": "boj",
@@ -35,15 +35,15 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-10-04T23:12:55.646Z"
+      "checkedAt": "2026-10-05T05:45:43.521Z"
     },
     {
       "id": "bls",
       "name": "U.S. Bureau of Labor Statistics",
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
-      "eventCount": 6,
-      "checkedAt": "2026-10-04T23:12:55.581Z",
+      "eventCount": 5,
+      "checkedAt": "2026-10-05T05:45:43.211Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 3,
-      "checkedAt": "2026-10-04T23:12:55.683Z"
+      "checkedAt": "2026-10-05T05:45:43.276Z"
     },
     {
       "id": "treasury-refunding",
@@ -60,26 +60,10 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-10-04T23:13:13.845Z"
+      "checkedAt": "2026-10-05T05:45:52.332Z"
     }
   ],
   "events": [
-    {
-      "id": "bls-nfp-2026-10-02",
-      "sourceId": "bls",
-      "date": "2026-10-02",
-      "time": "08:30",
-      "timeZone": "America/New_York",
-      "timeLabel": "08:30 ET",
-      "datetimeUtc": "2026-10-02T12:30:00Z",
-      "title": "U.S. Employment Situation / Nonfarm Payrolls",
-      "category": "Labour",
-      "region": "United States",
-      "impact": "critical",
-      "sourceName": "U.S. Bureau of Labor Statistics",
-      "sourceUrl": "https://www.bls.gov/schedule/news_release/empsit.htm",
-      "whyItMatters": "Payrolls, unemployment and wage growth can rapidly alter expectations for Fed policy and front-end Treasury yields."
-    },
     {
       "id": "treasury-auctions-u-s-treasury-3-year-auction-2026-10-06",
       "sourceId": "treasury-auctions",
