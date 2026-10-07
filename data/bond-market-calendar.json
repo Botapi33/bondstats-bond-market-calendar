@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T23:50:48.274Z",
+  "generatedAt": "2026-10-07T06:04:28.876Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-10-06T23:50:38.643Z",
+      "checkedAt": "2026-10-07T06:04:20.644Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 9,
-      "checkedAt": "2026-10-06T23:50:39.541Z"
+      "checkedAt": "2026-10-07T06:04:21.084Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-10-06T23:50:39.170Z"
+      "checkedAt": "2026-10-07T06:04:20.900Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-10-06T23:50:39.337Z"
+      "checkedAt": "2026-10-07T06:04:20.848Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 5,
-      "checkedAt": "2026-10-06T23:50:39.033Z",
+      "checkedAt": "2026-10-07T06:04:20.713Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "ok",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 3,
-      "checkedAt": "2026-10-06T23:50:39.411Z"
+      "checkedAt": "2026-10-07T06:04:20.802Z"
     },
     {
       "id": "treasury-refunding",
@@ -60,7 +60,7 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-10-06T23:50:48.274Z"
+      "checkedAt": "2026-10-07T06:04:28.876Z"
     }
   ],
   "events": [
