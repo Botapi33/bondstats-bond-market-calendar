@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T04:55:23.282Z",
+  "generatedAt": "2026-10-20T13:34:46.960Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-10-20T04:55:02.019Z",
+      "checkedAt": "2026-10-20T13:34:25.572Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 9,
-      "checkedAt": "2026-10-20T04:55:02.548Z"
+      "checkedAt": "2026-10-20T13:34:26.012Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-10-20T04:55:02.566Z"
+      "checkedAt": "2026-10-20T13:34:25.970Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-10-20T04:55:02.303Z"
+      "checkedAt": "2026-10-20T13:34:25.826Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 4,
-      "checkedAt": "2026-10-20T04:55:02.353Z",
+      "checkedAt": "2026-10-20T13:34:25.757Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "fallback",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 2,
-      "checkedAt": "2026-10-20T04:55:02.999Z",
+      "checkedAt": "2026-10-20T13:34:25.814Z",
       "message": "No coupon Treasury auctions parsed"
     },
     {
@@ -61,7 +61,7 @@
       "status": "fallback",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-10-20T04:55:23.282Z",
+      "checkedAt": "2026-10-20T13:34:46.960Z",
       "message": "The operation was aborted due to timeout"
     }
   ],
