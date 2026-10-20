@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T13:34:46.960Z",
+  "generatedAt": "2026-10-20T20:00:46.435Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-10-20T13:34:25.572Z",
+      "checkedAt": "2026-10-20T20:00:27.800Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 9,
-      "checkedAt": "2026-10-20T13:34:26.012Z"
+      "checkedAt": "2026-10-20T20:00:28.837Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-10-20T13:34:25.970Z"
+      "checkedAt": "2026-10-20T20:00:28.337Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-10-20T13:34:25.826Z"
+      "checkedAt": "2026-10-20T20:00:28.350Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 4,
-      "checkedAt": "2026-10-20T13:34:25.757Z",
+      "checkedAt": "2026-10-20T20:00:28.309Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,17 +52,16 @@
       "status": "fallback",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 2,
-      "checkedAt": "2026-10-20T13:34:25.814Z",
+      "checkedAt": "2026-10-20T20:00:28.609Z",
       "message": "No coupon Treasury auctions parsed"
     },
     {
       "id": "treasury-refunding",
       "name": "U.S. Treasury Quarterly Refunding",
-      "status": "fallback",
+      "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-10-20T13:34:46.960Z",
-      "message": "The operation was aborted due to timeout"
+      "checkedAt": "2026-10-20T20:00:46.435Z"
     }
   ],
   "events": [
