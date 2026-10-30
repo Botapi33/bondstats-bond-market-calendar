@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-29T21:09:48.919Z",
+  "generatedAt": "2026-10-30T05:53:27.294Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 2,
-      "checkedAt": "2026-10-29T21:09:40.522Z",
+      "checkedAt": "2026-10-30T05:53:18.823Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -18,8 +18,8 @@
       "name": "European Central Bank",
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-      "eventCount": 9,
-      "checkedAt": "2026-10-29T21:09:40.994Z"
+      "eventCount": 8,
+      "checkedAt": "2026-10-30T05:53:19.335Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-10-29T21:09:41.075Z"
+      "checkedAt": "2026-10-30T05:53:19.068Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 9,
-      "checkedAt": "2026-10-29T21:09:40.865Z"
+      "checkedAt": "2026-10-30T05:53:19.495Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 4,
-      "checkedAt": "2026-10-29T21:09:40.812Z",
+      "checkedAt": "2026-10-30T05:53:19.072Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "error",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 0,
-      "checkedAt": "2026-10-29T21:09:41.046Z",
+      "checkedAt": "2026-10-30T05:53:19.152Z",
       "message": "No coupon Treasury auctions parsed"
     },
     {
@@ -61,7 +61,7 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-10-29T21:09:48.919Z"
+      "checkedAt": "2026-10-30T05:53:27.293Z"
     }
   ],
   "events": [
@@ -80,23 +80,6 @@
       "sourceName": "Federal Reserve",
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "whyItMatters": "The FOMC decision directly reprices the expected policy path, front-end Treasury yields and the shape of the global yield curve."
-    },
-    {
-      "id": "ecb-ecb-monetary-policy-decision-2026-10-29",
-      "sourceId": "ecb",
-      "date": "2026-10-29",
-      "time": "14:15",
-      "timeZone": "Europe/Brussels",
-      "timeLabel": "14:15 CET/CEST",
-      "datetimeUtc": "2026-10-29T13:15:00.000Z",
-      "title": "ECB Monetary Policy Decision",
-      "category": "Central Banks",
-      "region": "Euro Area",
-      "impact": "critical",
-      "sourceName": "European Central Bank",
-      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-      "whyItMatters": "Changes in the ECB policy path can reprice Bund yields, euro-area curves, sovereign spreads and global duration.",
-      "meta": {}
     },
     {
       "id": "boj-bank-of-japan-monetary-policy-decision-2026-10-30",
