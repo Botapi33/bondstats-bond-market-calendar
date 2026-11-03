@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-02T18:25:37.280Z",
+  "generatedAt": "2026-11-03T02:22:15.599Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 1,
-      "checkedAt": "2026-11-02T18:25:28.867Z",
+      "checkedAt": "2026-11-03T02:21:55.931Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,7 +19,7 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 8,
-      "checkedAt": "2026-11-02T18:25:29.702Z"
+      "checkedAt": "2026-11-03T02:21:56.581Z"
     },
     {
       "id": "boe",
@@ -27,7 +27,7 @@
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "eventCount": 1,
-      "checkedAt": "2026-11-02T18:25:29.252Z"
+      "checkedAt": "2026-11-03T02:21:56.442Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 8,
-      "checkedAt": "2026-11-02T18:25:29.352Z"
+      "checkedAt": "2026-11-03T02:21:56.719Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 4,
-      "checkedAt": "2026-11-02T18:25:29.165Z",
+      "checkedAt": "2026-11-03T02:21:56.409Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "error",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 0,
-      "checkedAt": "2026-11-02T18:25:29.497Z",
+      "checkedAt": "2026-11-03T02:21:56.680Z",
       "message": "No coupon Treasury auctions parsed"
     },
     {
@@ -61,27 +61,10 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-11-02T18:25:37.280Z"
+      "checkedAt": "2026-11-03T02:22:15.598Z"
     }
   ],
   "events": [
-    {
-      "id": "treasury-refunding-u-s-treasury-borrowing-estimate-2026-11-02",
-      "sourceId": "treasury-refunding",
-      "date": "2026-11-02",
-      "time": "15:00",
-      "timeZone": "America/New_York",
-      "timeLabel": "15:00 ET",
-      "datetimeUtc": "2026-11-02T20:00:00.000Z",
-      "title": "U.S. Treasury Borrowing Estimate",
-      "category": "Treasury",
-      "region": "United States",
-      "impact": "high",
-      "sourceName": "U.S. Treasury Quarterly Refunding",
-      "sourceUrl": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
-      "whyItMatters": "Borrowing estimates shape expectations for future Treasury supply and can move term premium, curve steepness and dealer balance-sheet expectations.",
-      "meta": {}
-    },
     {
       "id": "boe-bank-of-england-rate-decision-2026-11-05",
       "sourceId": "boe",
@@ -245,6 +228,23 @@
       "sourceName": "Bank of Japan",
       "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "whyItMatters": "BoJ decisions can trigger sharp moves in JGB yields, the yen and global term premia because Japan is a major source of cross-border capital.",
+      "meta": {}
+    },
+    {
+      "id": "treasury-refunding-u-s-treasury-borrowing-estimate-2027-02-01",
+      "sourceId": "treasury-refunding",
+      "date": "2027-02-01",
+      "time": "15:00",
+      "timeZone": "America/New_York",
+      "timeLabel": "15:00 ET",
+      "datetimeUtc": "2027-02-01T20:00:00.000Z",
+      "title": "U.S. Treasury Borrowing Estimate",
+      "category": "Treasury",
+      "region": "United States",
+      "impact": "high",
+      "sourceName": "U.S. Treasury Quarterly Refunding",
+      "sourceUrl": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
+      "whyItMatters": "Borrowing estimates shape expectations for future Treasury supply and can move term premium, curve steepness and dealer balance-sheet expectations.",
       "meta": {}
     },
     {
