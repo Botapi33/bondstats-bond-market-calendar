@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-05T12:24:55.222Z",
+  "generatedAt": "2026-11-05T22:01:56.682Z",
   "status": "live-with-fallbacks",
   "windowDays": 400,
   "sources": [
@@ -10,7 +10,7 @@
       "status": "fallback",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "eventCount": 1,
-      "checkedAt": "2026-11-05T12:24:45.831Z",
+      "checkedAt": "2026-11-05T22:01:37.224Z",
       "message": "No upcoming FOMC meetings parsed"
     },
     {
@@ -19,15 +19,15 @@
       "status": "ok",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "eventCount": 8,
-      "checkedAt": "2026-11-05T12:24:46.679Z"
+      "checkedAt": "2026-11-05T22:01:37.890Z"
     },
     {
       "id": "boe",
       "name": "Bank of England",
       "status": "ok",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-      "eventCount": 1,
-      "checkedAt": "2026-11-05T12:24:46.312Z"
+      "eventCount": 2,
+      "checkedAt": "2026-11-05T22:01:37.471Z"
     },
     {
       "id": "boj",
@@ -35,7 +35,7 @@
       "status": "ok",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
       "eventCount": 8,
-      "checkedAt": "2026-11-05T12:24:46.615Z"
+      "checkedAt": "2026-11-05T22:01:37.724Z"
     },
     {
       "id": "bls",
@@ -43,7 +43,7 @@
       "status": "fallback",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "eventCount": 4,
-      "checkedAt": "2026-11-05T12:24:46.117Z",
+      "checkedAt": "2026-11-05T22:01:37.522Z",
       "message": "Invalid time zone specified: US-Eastern"
     },
     {
@@ -52,7 +52,7 @@
       "status": "error",
       "url": "https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&days=90",
       "eventCount": 0,
-      "checkedAt": "2026-11-05T12:24:46.542Z",
+      "checkedAt": "2026-11-05T22:01:37.712Z",
       "message": "No coupon Treasury auctions parsed"
     },
     {
@@ -61,10 +61,27 @@
       "status": "ok",
       "url": "https://home.treasury.gov/policy-issues/financing-the-government/quarterly-refunding/most-recent-quarterly-refunding-documents",
       "eventCount": 2,
-      "checkedAt": "2026-11-05T12:24:55.222Z"
+      "checkedAt": "2026-11-05T22:01:56.682Z"
     }
   ],
   "events": [
+    {
+      "id": "boe-bank-of-england-rate-decision-2026-11-05",
+      "sourceId": "boe",
+      "date": "2026-11-05",
+      "time": "12:00",
+      "timeZone": "Europe/London",
+      "timeLabel": "12:00 London",
+      "datetimeUtc": "2026-11-05T12:00:00.000Z",
+      "title": "Bank of England Rate Decision",
+      "category": "Central Banks",
+      "region": "United Kingdom",
+      "impact": "critical",
+      "sourceName": "Bank of England",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "whyItMatters": "Bank Rate decisions move gilt yields, sterling rates and expectations for the UK inflation-policy trade-off.",
+      "meta": {}
+    },
     {
       "id": "bls-nfp-2026-11-06",
       "sourceId": "bls",
